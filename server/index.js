@@ -6,9 +6,14 @@ const app = express();
 
 // 
 import connectDb from "./utils/connectDb.js"
+import userRouter from './routers/user.route.js'
+
 
 // Connecting to database 
 connectDb();
+
+// create routes
+app.use('/api',userRouter)
 
 
 const port = 8000;
