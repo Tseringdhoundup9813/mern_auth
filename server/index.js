@@ -7,13 +7,19 @@ const app = express();
 // 
 import connectDb from "./utils/connectDb.js"
 import userRouter from './routers/user.route.js'
+import authRouter from './routers/auth.route.js'
+
 
 
 // Connecting to database 
 connectDb();
 
+// middleware
+app.use(express.json());
+
 // create routes
-app.use('/api',userRouter)
+app.use('/api/user',userRouter)
+app.use("/api/auth",authRouter)
 
 
 const port = 8000;
