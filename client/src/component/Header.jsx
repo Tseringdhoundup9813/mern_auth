@@ -10,7 +10,7 @@ function Header() {
         <ul className='flex gap-4'>
           <li className='text-sm font-semibold'><Link to="/">Home</Link></li>
           <li className='text-sm font-semibold'><Link to="/about">About</Link></li>
-          <li className='text-sm font-semibold'><Link to="/about">Sign In</Link></li>
+          <li className='text-sm font-semibold'><Link to="/sign-up">Sign Up</Link></li>
         </ul>
       </div>
     </div>
